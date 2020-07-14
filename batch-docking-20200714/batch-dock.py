@@ -90,11 +90,11 @@ if __name__ == '__main__':
     list=os.listdir('.')
     ligands=[i for i in list if i.split('.')[-1]=='pdb']
     ligands.remove(receptor)
-    os.system('mkdir result-vina-final')
     if program=="dock":
       for i in  ligands:
          batch_dock(receptor, i, npts, gridcenter)
     if program=="vina":
+      os.system('mkdir result-vina-final')
       for i in  ligands:
          batch_vina(receptor, i, grid_parameter) 
 
