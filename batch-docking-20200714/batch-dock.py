@@ -71,7 +71,7 @@ if __name__ == '__main__':
         usage()
         sys.exit(2)
 
-#'r:vo:A:Cp:U:eMh'
+#'r:l:n:g:c:P:'
     for o, a in opt_list:
         if o in ('-P', '--P'):
             program = a       #    P "dock" or "vina"
